@@ -22,3 +22,11 @@ a {
   margin-bottom: 1rem;
   width: 10rem;
 }
+
+.axis { font: 14px sans-serif; }
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
