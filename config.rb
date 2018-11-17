@@ -5,6 +5,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :directory_indexes
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -12,6 +14,8 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
+
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -36,6 +40,16 @@ page '/*.txt', layout: false
 #     'Helping'
 #   end
 # end
+#
+helpers do
+  def euro_countries
+    [
+    'BE', 'BG', 'CZ', 'DK', 'DE', 'EE', 'IE', 'EL', 'ES', 'FR',
+    'HR', 'IT', 'CY', 'LV', 'LT', 'LU', 'HU', 'MT', 'NL', 'AT',
+    'PL', 'PT', 'RO', 'SI', 'SK', 'FI', 'SE', 'UK'
+    ]
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
