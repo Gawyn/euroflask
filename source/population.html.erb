@@ -7,3 +7,9 @@ title: Population Stats
 <h1>
   Population - EuroFlask
 </h1>
+
+<div id="country_list">
+  <% euro_countries.each do |c| %>
+    <%= link_to c, "?country=#{c}" %>
+  <% end %>
+</div>
