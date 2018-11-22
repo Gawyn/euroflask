@@ -43,11 +43,36 @@ page '/*.txt', layout: false
 #
 helpers do
   def euro_countries
-    [
-    'BE', 'BG', 'CZ', 'DK', 'DE', 'EE', 'IE', 'EL', 'ES', 'FR',
-    'HR', 'IT', 'CY', 'LV', 'LT', 'LU', 'HU', 'MT', 'NL', 'AT',
-    'PL', 'PT', 'RO', 'SI', 'SK', 'FI', 'SE', 'UK'
-    ]
+    {
+      'Austria' => 'AT',
+      'Belgium'  => 'BE',
+      'Bulgaria' =>'BG',
+      'Czech Republic' => 'CZ',
+      'Croatia' => 'HR',
+      'Cyprus' => 'CY',
+      'Denmark' => 'DK',
+      'Estonia' => 'EE',
+      'Finland' => 'FI',
+      'Germany' => 'DE',
+      'Greece' => 'EL',
+      'Ireland' => 'IE',
+      'France' => 'FR',
+      'Hungary' => 'HU',
+      'Italy' => 'IT',
+      'Latvia' => 'LV',
+      'Lithuania' => 'LT',
+      'Luxembourg' => 'LU',
+      'Malta' => 'MT',
+      'Netherlands' => 'NL',
+      'Poland' => 'PL',
+      'Portugal' => 'PT',
+      'Romania' => 'RO',
+      'Slovenia' => 'SI',
+      'Slovakia' => 'SK',
+      'Spain' => 'ES',
+      'Sweden' => 'SE',
+      'United Kingdom' => 'UK'
+    }
   end
 end
 

@@ -9,7 +9,7 @@ title: Population Stats
 </h1>
 
 <div id="country_list">
-  <% euro_countries.each do |c| %>
-    <%= link_to c, "/population?country=#{c}" %>
+  <% euro_countries.each do |country, code| %>
+    <%= link_to country, "/population?country=#{code}" %>
   <% end %>
 </div>
