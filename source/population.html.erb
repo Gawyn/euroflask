@@ -8,7 +8,7 @@ title: Population Stats
   Population - EuroFlask
 </h1>
 
-<div id="country_list">
+<div class="country_list">
   <% euro_countries.each do |country, code| %>
     <%= link_to country, "/population?country=#{code}" %>
   <% end %>

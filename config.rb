@@ -74,6 +74,13 @@ helpers do
       'United Kingdom' => 'UK'
     }
   end
+
+  def euro_countries_by_code
+    euro_countries.inject({}) do |sum, country|
+      sum[country.last] = country.first
+      sum
+    end
+  end
 end
 
 # Build-specific configuration

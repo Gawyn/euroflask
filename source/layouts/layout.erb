@@ -10,6 +10,10 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
     <%= javascript_include_tag "d3.v5.min" %>
+    <script>
+      var countryDictionary = <%= euro_countries_by_code.to_json %>
+      var countryPacks = <%= euro_countries.to_a.to_json %>
+    </script>
   </head>
   <body>
     <%= yield %>
