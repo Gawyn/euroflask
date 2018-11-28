@@ -95,7 +95,7 @@ d3.json(url).then(function(data) {
       div.transition()		
           .duration(200)		
           .style("opacity", .8);		
-      div.html(d.population)	
+      div.html(d.date.getFullYear() + " population: " + d.population)
           .style("left", x(d.date) + "px")		
           .style("top", y(d.population) + "px");	
       svg_aline.transition().duration(10)

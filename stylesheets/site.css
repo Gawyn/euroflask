@@ -21,3 +21,7 @@ a {
   fill: none;
   stroke: steelblue;
   stroke-width: 2px; }
+
+#country_list {
+  width: 960px;
+  margin: auto; }
